@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: net.corda.plugins:cordform-common:3.0.9">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.corda.plugins/cordform-common/3.0.9/b9dd4443755afb0a7ca861584885ed86603b52bd/cordform-common-3.0.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.corda.plugins/cordform-common/3.0.9/b2cd5ed4b1e77f312857b93661228654d3bba24a/cordform-common-3.0.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
