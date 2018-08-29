@@ -1,24 +1,7 @@
-![Corda](https://www.corda.net/wp-content/uploads/2016/11/fg005_corda_b.png)
-
-# Bootcamp CorDapp
-
-This project is the template we will use to define a complete CorDapp during 
-today's bootcamp. Our CorDapp will allow a token to be issued onto the ledger.
-
-We'll take a test-driven approach. You'll know your CorDapp is working 
-when it passes both sets of tests defined in `src/test/java/java_bootcamp`.
+# Foreign Exchange in Corda
+Implement a Foreign Exchange (FX) system in Corda.
 
 ## Links to useful resources
-
-This project contains example state, contract and flow implementations:
-
-* `src/main/java/java_examples/IAmAState`
-* `src/main/java/java_examples/IAmAlsoAState`
-* `src/main/java/java_examples/IAmAContract`
-* `src/main/java/java_examples/IAmAFlowPair`
-
-There are also several web resources that you will likely find useful for this
-bootcamp:
 
 * Key Concepts docs (`docs.corda.net/key-concepts.html`)
 * API docs (`docs.corda.net/api-index.html`)
@@ -28,7 +11,7 @@ bootcamp:
 
 ## What we'll be building
 
-Our CorDapp will have three parts:
+Our FX system will have three parts:
 
 ### The TokenState
 
