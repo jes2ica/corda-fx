@@ -1,0 +1,13 @@
+objc[37069]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/bin/java (0x106c4e4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x106cd24e0). One of the two will be used. Which one is undefined.
+
+[91m   ______               __
+  / ____/     _________/ /___ _
+ / /     __  / ___/ __  / __ `/         [94mI asked for insurance if the nearby
+[91m/ /___  /_/ / /  / /_/ / /_/ /          [94mvolcano erupted. They said I'd be covered.
+[91m\____/     /_/   \__,_/\__,_/[m
+
+[99;1m--- Corda Open Source corda-3.0 (d9d6684) -----------------------------------------------
+
+[m
+Logs can be found in                    : /Users/yijiez/Documents/github/cordapp-bootcamp/build/nodes/Notary/logs
+Database connection url is              : jdbc:h2:tcp://172.31.254.146:60870/node
