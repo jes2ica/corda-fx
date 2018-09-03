@@ -7,31 +7,29 @@ import net.corda.core.identity.Party;
 
 import java.util.List;
 
-/* Our state, defining a shared fact on the ledger.
- * See src/main/kotlin/examples/IAmAState.java and
- * src/main/kotlin/examples/IAmAlsoAState.java for examples. */
+/* Definition of a Trade */
 public class TradeState implements ContractState {
-    private Party issuer;
-    private Party recipient;
+    private Party initiator;
+    private Party counterparty;
     private int amount;
 
     public TradeState(Party issuer, Party recipient, int amount) {
-        this.issuer = issuer;
-        this.recipient = recipient;
+        this.initiator = issuer;
+        this.counterparty = recipient;
         this.amount = amount;
     }
 
     @Override
     public List<AbstractParty> getParticipants() {
-        return ImmutableList.of(issuer, recipient);
+        return ImmutableList.of(initiator, counterparty);
     }
 
-    public Party getIssuer() {
-        return issuer;
+    public Party getInitiator() {
+        return initiator;
     }
 
-    public Party getRecipient() {
-        return recipient;
+    public Party getCounterparty() {
+        return counterparty;
     }
 
     public int getAmount() {
