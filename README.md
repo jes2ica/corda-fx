@@ -122,11 +122,11 @@ Once you've finished the CorDapp's code, run it with the following steps:
     * macOS:     `build/nodes/runnodes`
 
 * Open the nodes are started, go to the terminal of Party A (not the notary!)
-  and run the following command to issue 99 tokens to Party B:
+  and run the following command to intiate a trade with Party B:
 
-    `flow start TokenFlow recipient: PartyB, amount: 99`
+    `flow start fx.TradeFlow$TradeInitiatorFlow counterparty: PartyB, status: "Proposed", boughtCurrency: "USD", boughtAmount: 100, soldCurrency: "CNY", soldAmount: 680`
 
 * You can now see the tokens in both nodes' vaults by running the following
   command in their respective terminals:
 
-    `run vaultQuery contractStateType: java_bootcamp.TokenState`
+    `run vaultQuery contractStateType: fx.TradeState`
