@@ -1,13 +1,13 @@
-objc[37070]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/bin/java (0x10b63a4c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10b6be4e0). One of the two will be used. Which one is undefined.
+objc[87473]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/bin/java (0x10f3484c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x10f3cc4e0). One of the two will be used. Which one is undefined.
 
 [91m   ______               __
   / ____/     _________/ /___ _
- / /     __  / ___/ __  / __ `/         [94mWhat you can buy for a dollar these
-[91m/ /___  /_/ / /  / /_/ / /_/ /          [94mdays is absolute non-cents! 💰  
+ / /     __  / ___/ __  / __ `/         [94mI had an account with a bank in the
+[91m/ /___  /_/ / /  / /_/ / /_/ /          [94mNorth Pole, but they froze all my assets 🎅  
 [91m\____/     /_/   \__,_/\__,_/[m
 
 [99;1m--- Corda Open Source corda-3.0 (d9d6684) -----------------------------------------------
 
 [m
-Logs can be found in                    : /Users/yijiez/Documents/github/cordapp-bootcamp/build/nodes/PartyC/logs
-Database connection url is              : jdbc:h2:tcp://172.31.254.146:60871/node
+Logs can be found in                    : /Users/yijiez/Documents/github/corda-fx/build/nodes/PartyC/logs
+Database connection url is              : jdbc:h2:tcp://172.19.23.35:60335/node
