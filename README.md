@@ -125,6 +125,23 @@ Once you've finished the CorDapp's code, run it with the following steps:
   and run the following command to intiate a trade with Party B:
 
     `flow start fx.TradeFlow$TradeInitiatorFlow counterparty: PartyB, status: "Proposed", boughtCurrency: "USD", boughtAmount: 100, soldCurrency: "CNY", soldAmount: 680`
+    
+* You can see the following logs:
+
+- ✅   Identifying other nodes on the network.
+- ✅   Building a transaction.
+- ✅   Verifying a transaction.
+- ✅   Signing a transaction.
+- ✅   Gathering a transaction's signatures.
+    - ✅   Collecting signatures from counterparties.
+    - ✅   Verifying collected signatures.
+- ✅   Verifying a transaction's signatures.
+- ✅   Finalising a transaction.
+    - ✅   Requesting signature by notary service
+        - ✅   Requesting signature by Notary service
+        - ✅   Validating response from Notary service
+    - ✅   Broadcasting transaction to participants
+- ✅   Done
 
 * You can now see the tokens in both nodes' vaults by running the following
   command in their respective terminals:
