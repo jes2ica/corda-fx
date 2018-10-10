@@ -33,7 +33,7 @@ public class FlowTests {
     @Test
     public void transactionConstructedByFlowUsesTheCorrectNotary() throws Exception {
         TradeFlow.TradeInitiatorFlow flow = new TradeFlow.TradeInitiatorFlow(
-                nodeB.getInfo().getLegalIdentities().get(0), "PROPOSED",
+                "12345", nodeB.getInfo().getLegalIdentities().get(0), "PROPOSED",
                 "USD", 100, "CNY", 680);
         nodeB.registerInitiatedFlow(TradeFlow.TradeResponderFlow.class);
         CordaFuture<SignedTransaction> future = nodeA.startFlow(flow);

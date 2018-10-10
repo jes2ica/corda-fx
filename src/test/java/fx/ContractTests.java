@@ -13,7 +13,8 @@ public class ContractTests {
     private final TestIdentity bob = new TestIdentity(new CordaX500Name("Bob", "", "GB"));
     private MockServices ledgerServices = new MockServices(new TestIdentity(new CordaX500Name("TestId", "", "GB")));
     private TradeState tradeState = new TradeState(
-            alice.getParty(), bob.getParty(), "PROPOSED", "USD", 100, "CNY", 680);
+            "12345", alice.getParty(), bob.getParty(), "PROPOSED", "USD", 100,
+            "CNY", 680);
 
     @Test
     public void tradeContractRequiresZeroInputsInTheTransaction() {

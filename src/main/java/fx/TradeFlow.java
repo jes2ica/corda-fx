@@ -28,6 +28,7 @@ public class TradeFlow {
     // Every flow must subclass ``FlowLogic``. The generic indicates the
     // flow's return type.
     public static class TradeInitiatorFlow extends FlowLogic<SignedTransaction> {
+        private String tradeId;
         private Party counterparty;
         private String status;
         private String boughtCurrency;
@@ -36,7 +37,9 @@ public class TradeFlow {
         private int soldAmount;
 
         public TradeInitiatorFlow(
-                Party counterparty, String status, String boughtCurrency, int boughtAmount, String soldCurrency, int soldAmount) {
+                String tradeId, Party counterparty, String status, String boughtCurrency, int boughtAmount,
+                String soldCurrency, int soldAmount) {
+            this.tradeId = tradeId;
             this.counterparty = counterparty;
             this.status = status;
             this.boughtCurrency = boughtCurrency;
@@ -100,7 +103,7 @@ public class TradeFlow {
             Party initiator = getOurIdentity();
 
             TradeState state = new TradeState(
-                    initiator, counterparty, status, boughtCurrency, boughtAmount, soldCurrency, soldAmount);
+                    tradeId, initiator, counterparty, status, boughtCurrency, boughtAmount, soldCurrency, soldAmount);
             transactionBuilder.addOutputState(state, TradeContract.ID, notary);
             transactionBuilder.addCommand(new TradeContract.Propose(), initiator.getOwningKey());
 

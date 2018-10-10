@@ -5,9 +5,11 @@ import net.corda.core.contracts.ContractState;
 import net.corda.core.identity.AbstractParty;
 import net.corda.core.identity.Party;
 
+import javax.annotation.Nullable;
 import java.util.List;
 
 public class TradeState implements ContractState {
+    private String tradeId;
     private Party initiator;
     private Party counterparty;
     private String status;
@@ -16,7 +18,10 @@ public class TradeState implements ContractState {
     private String soldCurrency;
     private int soldAmount;
 
-    public TradeState(Party initiator, Party counterParty, String status, String boughtCurrency, int boughtAmount, String soldCurrency, int soldAmount) {
+    public TradeState(
+            @Nullable String tradeId, Party initiator, Party counterParty, String status, String boughtCurrency, int boughtAmount,
+            String soldCurrency, int soldAmount) {
+        this.tradeId = tradeId;
         this.initiator = initiator;
         this.counterparty = counterParty;
         this.status = status;
@@ -26,6 +31,7 @@ public class TradeState implements ContractState {
         this.soldAmount = soldAmount;
     }
 
+    public String getTradeId() { return tradeId; }
     public Party getInitiator() {
         return initiator;
     }

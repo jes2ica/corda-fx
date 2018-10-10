@@ -21,7 +21,8 @@ public class StateTests {
     @Test
     public void tokenStateHasGettersForIssuerRecipient() {
         TradeState tradeState = new TradeState(
-                alice, bob, "PROPOSED", "USD", 100, "CNY", 680);
+                "12345", alice, bob, "PROPOSED", "USD", 100,
+                "CNY", 680);
         assertEquals(alice, tradeState.getInitiator());
         assertEquals(bob, tradeState.getCounterParty());
         assertEquals(2, tradeState.getParticipants().size());
