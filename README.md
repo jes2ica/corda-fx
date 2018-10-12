@@ -13,58 +13,61 @@ Implement a Foreign Exchange (FX) system in Corda.
 
 Our FX system will have three parts:
 
-### The TokenState
+### The TradeState
 
-States define shared facts on the ledger. Our state, TokenState, will define a
-token. It will have the following structure:
+States define shared facts on the ledger. Our state, TradeState, will define a
+fx trade. It will have the following structure:
 
-    -------------------
-    |                 |
-    |   TokenState    |
-    |                 |
-    |   - issuer      |
-    |   - recipient   |
-    |   - amount      |
-    |                 |
-    -------------------
+    ----------------------
+    |                    |
+    |   TradeState       |
+    |                    |
+    |   - tradeId        |
+    |   - initiator      |
+    |   - counterparty   |
+    |   - status         |
+    |   - boughtCurrency |
+    |   - boughtAmount   |
+    |   - soldCurrency   | 
+    |   - soldAmount     |
+    |                    |
+    ----------------------
 
-### The TokenContract
+### The TradeContract
 
-Contracts govern how states evolve over time. Our contract, TokenContract,
-will define how TokenStates evolve. It will only allow the following type of
+Contracts govern how states evolve over time. Our contract, TradeContract,
+will define how TradeState evolve. It will only allow the following type of
 TokenState transaction:
 
     -------------------------------------------------------------------------------------
     |                                                                                   |
     |    - - - - - - - - - -                                     -------------------    |
     |                                              ▲             |                 |    |
-    |    |                 |                       | -►          |   TokenState    |    |
+    |    |                 |                       | -►          |   TradeState    |    |
     |            NO             -------------------     -►       |                 |    |
-    |    |                 |    |      Issue command       -►    |   - issuer      |    |
-    |          INPUTS           |     signed by issuer     -►    |   - recipient   |    |
-    |    |                 |    -------------------     -►       |   - amount > 0  |    |
+    |    |                 |    |    Propose command       -►    |   - initiator   |    |
+    |          INPUTS           | signed by initiator      -►    |   - recipient   |    |
+    |    |                 |    -------------------     -►       |                 |    |
     |                                              | -►          |                 |    |
     |    - - - - - - - - - -                       ▼             -------------------    |
     |                                                                                   |
     -------------------------------------------------------------------------------------
 
               No inputs             One issue command,                One output,
-                                 issuer is a required signer       amount is positive
+                                 issuer is a required signer       issuer must sign
 
-To do so, TokenContract will impose the following constraints on transactions
+To do so, TradeContract will impose the following constraints on transactions
 involving TokenStates:
 
-* The transaction has no input states
 * The transaction has one output state
 * The transaction has one command
 * The output state is a TokenState
-* The output state has a positive amount
-* The command is an Issue command
-* The command lists the TokenState's issuer as a required signer
+* The command is an Propose command
+* The command lists the TokenState's initiator as a required signer
 
-### The TokenFlow
+### The TradeFlow
 
-Flows automate the process of updating the ledger. Our flow, TokenFlow, will
+Flows automate the process of updating the ledger. Our flow, TradeFlow, will
 automate the following steps:
 
             Issuer                Recipient                Notary
@@ -75,17 +78,19 @@ automate the following steps:
          a transaction                |                       |
               |
         Adds the output               |                       |
-          TokenState
+          TradeState
               |                       |                       |
            Adds the
-         Issue command                |                       |
+         Popose command               |                       |
               |
-         Verifies the                 |                       |
-          transaction
+          Signs the                   |                       |
+         transaction                  
               |                       |                       |
-          Signs the
-         transaction                  |                       |
-              |
+              
+              |.                 Verifies the                 |
+                                transaction                  
+              |                       |                       |
+              
               |----------------------------------------------►|
               |                       |                       |
                                                          Notarises the
@@ -124,7 +129,7 @@ Once you've finished the CorDapp's code, run it with the following steps:
 * Open the nodes are started, go to the terminal of Party A (not the notary!)
   and run the following command to intiate a trade with Party B:
 
-    `flow start fx.TradeFlow$TradeInitiatorFlow counterparty: PartyB, status: "Proposed", boughtCurrency: "USD", boughtAmount: 100, soldCurrency: "CNY", soldAmount: 680`
+    `flow start fx.TradeFlow$TradeInitiatorFlow tradeId: "123", counterparty: PartyB, status: "Proposed", boughtCurrency: "USD", boughtAmount: 100, soldCurrency: "CNY", soldAmount: 680`
     
 * You can see the following logs:
 
