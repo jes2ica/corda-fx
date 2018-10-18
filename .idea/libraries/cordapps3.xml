@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="cordapps3">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/build/nodes/PartyA/cordapps/corda-fx.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/nodes/PartyA/cordapps/cordapp-bootcamp.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

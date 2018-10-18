@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="runnodes">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/build/tmp/expandedArchives/cordformation-3.0.9.jar_6f7dafd736ad69435c2d8acd7bfc79c3/net/corda/plugins/runnodes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

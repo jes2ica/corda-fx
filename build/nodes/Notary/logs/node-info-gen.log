@@ -1,13 +1,12 @@
-objc[86198]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/bin/java (0x1071314c0) and /Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/libinstrument.dylib (0x1071b54e0). One of the two will be used. Which one is undefined.
 
 [91m   ______               __
   / ____/     _________/ /___ _
- / /     __  / ___/ __  / __ `/         [94mKind of like a regular database but
-[91m/ /___  /_/ / /  / /_/ / /_/ /          [94mwith emojis, colours and ascii art. 😎  
+ / /     __  / ___/ __  / __ `/         [94mYou know, I was a banker
+[91m/ /___  /_/ / /  / /_/ / /_/ /          [94monce ... but I lost interest. 💰  
 [91m\____/     /_/   \__,_/\__,_/[m
 
 [99;1m--- Corda Open Source corda-3.0 (d9d6684) -----------------------------------------------
 
 [m
-Logs can be found in                    : /Users/yijiez/Documents/github/corda-fx/build/nodes/Notary/logs
-Database connection url is              : jdbc:h2:tcp://172.19.23.35:49713/node
+Logs can be found in                    : /Users/jes2ica/Documents/GitHub/corda-fx/build/nodes/Notary/logs
+Database connection url is              : jdbc:h2:tcp://192.168.86.224:59394/node

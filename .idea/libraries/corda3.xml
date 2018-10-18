@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="corda3">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/build/nodes/Notary/corda.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

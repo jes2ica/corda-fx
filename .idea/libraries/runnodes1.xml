@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="runnodes1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/build/nodes/runnodes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

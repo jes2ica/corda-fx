@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="corda2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/build/nodes/PartyC/corda.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

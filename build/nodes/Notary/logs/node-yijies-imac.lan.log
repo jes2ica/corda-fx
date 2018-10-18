@@ -1,0 +1,59 @@
+[WARN ] 2018-10-12T08:49:41,794Z [Thread-4 (ActiveMQ-server-org.apache.activemq.artemis.core.server.impl.ActiveMQServerImpl$3@779cb140)] core.client.fail - AMQ212037: Connection failure has been detected: AMQ119014: Did not receive data from /127.0.0.1:59902 within the 60,000ms connection TTL. The connection will now be closed. [code=CONNECTION_TIMEDOUT] {}
+[INFO ] 2018-10-12T08:49:42,119Z [nioEventLoopGroup-2-7] netty.AMQPClient.operationComplete - Disconnected from localhost:10006 {}
+[INFO ] 2018-10-12T08:49:42,124Z [nioEventLoopGroup-2-7] O=PartyB, L=New York, C=US.channelInactive - Closed client connection 82df0584 from localhost/127.0.0.1:10006 to /127.0.0.1:59903 {}
+[INFO ] 2018-10-12T08:49:42,126Z [nioEventLoopGroup-2-7] peers.DL6bogPH6pSjW7XqT9Lxn2qkbLUZytbvVjAbKuKmH5keVe -> localhost:10006:O=PartyB, L=New York, C=US.onSocketConnected - Bridge Disconnected {}
+[INFO ] 2018-10-12T08:49:42,143Z [nioEventLoopGroup-2-7] O=Notary, L=London, C=GB.onConnectionLocalClose - Connection local close org.apache.qpid.proton.engine.impl.ConnectionImpl@d62e2d8 {}
+[INFO ] 2018-10-12T08:49:42,144Z [nioEventLoopGroup-2-7] O=Notary, L=London, C=GB.onTransportError - Transport Error TransportImpl [_connectionEndpoint=org.apache.qpid.proton.engine.impl.ConnectionImpl@d62e2d8, org.apache.qpid.proton.engine.impl.TransportImpl@5f1690a3] {}
+[INFO ] 2018-10-12T08:49:42,144Z [nioEventLoopGroup-2-7] O=Notary, L=London, C=GB.onTransportError - Error: connection aborted {}
+[WARN ] 2018-10-12T08:49:42,476Z [HikariPool-1 housekeeper] pool.HikariPool.run - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h22s673ms). {}
+[INFO ] 2018-10-12T08:49:43,124Z [nioEventLoopGroup-2-8] netty.AMQPClient.run - Retry connect {}
+[INFO ] 2018-10-12T08:49:43,140Z [nioEventLoopGroup-2-1] netty.AMQPClient.operationComplete - Connected to localhost:10006 {}
+[INFO ] 2018-10-12T08:49:43,148Z [nioEventLoopGroup-2-1] O=PartyB, L=New York, C=US.channelActive - New client connection 589631b7 from localhost/127.0.0.1:10006 to /127.0.0.1:59946 {}
+[INFO ] 2018-10-12T08:49:44,664Z [nioEventLoopGroup-2-1] O=PartyB, L=New York, C=US.userEventTriggered - handshake completed subject: O=PartyB, L=New York, C=US {}
+[INFO ] 2018-10-12T08:49:44,667Z [nioEventLoopGroup-2-1] peers.DL6bogPH6pSjW7XqT9Lxn2qkbLUZytbvVjAbKuKmH5keVe -> localhost:10006:O=PartyB, L=New York, C=US.onSocketConnected - Bridge Connected {}
+[INFO ] 2018-10-12T08:49:44,674Z [nioEventLoopGroup-2-1] O=Notary, L=London, C=GB.onConnectionLocalOpen - Connection local open org.apache.qpid.proton.engine.impl.ConnectionImpl@33ce5766 {}
+[WARN ] 2018-10-12T10:50:52,831Z [Thread-0 (ActiveMQ-server-org.apache.activemq.artemis.core.server.impl.ActiveMQServerImpl$3@779cb140)] core.client.fail - AMQ212037: Connection failure has been detected: AMQ119014: Did not receive data from /127.0.0.1:59940 within the 60,000ms connection TTL. The connection will now be closed. [code=CONNECTION_TIMEDOUT] {}
+[INFO ] 2018-10-12T10:50:52,928Z [nioEventLoopGroup-2-1] netty.AMQPClient.operationComplete - Disconnected from localhost:10006 {}
+[INFO ] 2018-10-12T10:50:52,932Z [nioEventLoopGroup-2-1] O=PartyB, L=New York, C=US.channelInactive - Closed client connection 589631b7 from localhost/127.0.0.1:10006 to /127.0.0.1:59946 {}
+[INFO ] 2018-10-12T10:50:52,935Z [nioEventLoopGroup-2-1] peers.DL6bogPH6pSjW7XqT9Lxn2qkbLUZytbvVjAbKuKmH5keVe -> localhost:10006:O=PartyB, L=New York, C=US.onSocketConnected - Bridge Disconnected {}
+[INFO ] 2018-10-12T10:50:52,950Z [nioEventLoopGroup-2-1] O=Notary, L=London, C=GB.onConnectionLocalClose - Connection local close org.apache.qpid.proton.engine.impl.ConnectionImpl@33ce5766 {}
+[INFO ] 2018-10-12T10:50:52,952Z [nioEventLoopGroup-2-1] O=Notary, L=London, C=GB.onTransportError - Transport Error TransportImpl [_connectionEndpoint=org.apache.qpid.proton.engine.impl.ConnectionImpl@33ce5766, org.apache.qpid.proton.engine.impl.TransportImpl@10d7895f] {}
+[INFO ] 2018-10-12T10:50:52,952Z [nioEventLoopGroup-2-1] O=Notary, L=London, C=GB.onTransportError - Error: connection aborted {}
+[INFO ] 2018-10-12T10:50:53,932Z [nioEventLoopGroup-2-2] netty.AMQPClient.run - Retry connect {}
+[INFO ] 2018-10-12T10:50:53,947Z [nioEventLoopGroup-2-3] netty.AMQPClient.operationComplete - Connected to localhost:10006 {}
+[INFO ] 2018-10-12T10:50:53,953Z [nioEventLoopGroup-2-3] O=PartyB, L=New York, C=US.channelActive - New client connection adbe499e from localhost/127.0.0.1:10006 to /127.0.0.1:59982 {}
+[INFO ] 2018-10-12T10:50:54,075Z [nioEventLoopGroup-2-3] O=PartyB, L=New York, C=US.userEventTriggered - handshake completed subject: O=PartyB, L=New York, C=US {}
+[INFO ] 2018-10-12T10:50:54,079Z [nioEventLoopGroup-2-3] peers.DL6bogPH6pSjW7XqT9Lxn2qkbLUZytbvVjAbKuKmH5keVe -> localhost:10006:O=PartyB, L=New York, C=US.onSocketConnected - Bridge Connected {}
+[INFO ] 2018-10-12T10:50:54,100Z [nioEventLoopGroup-2-3] O=Notary, L=London, C=GB.onConnectionLocalOpen - Connection local open org.apache.qpid.proton.engine.impl.ConnectionImpl@84a2b33 {}
+[WARN ] 2018-10-12T10:51:07,446Z [HikariPool-1 housekeeper] pool.HikariPool.run - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h23s499ms). {}
+[WARN ] 2018-10-12T12:51:45,778Z [Thread-0 (ActiveMQ-server-org.apache.activemq.artemis.core.server.impl.ActiveMQServerImpl$3@779cb140)] core.client.fail - AMQ212037: Connection failure has been detected: AMQ119014: Did not receive data from /127.0.0.1:59978 within the 60,000ms connection TTL. The connection will now be closed. [code=CONNECTION_TIMEDOUT] {}
+[INFO ] 2018-10-12T12:51:45,839Z [nioEventLoopGroup-2-3] netty.AMQPClient.operationComplete - Disconnected from localhost:10006 {}
+[INFO ] 2018-10-12T12:51:45,846Z [nioEventLoopGroup-2-3] O=PartyB, L=New York, C=US.channelInactive - Closed client connection adbe499e from localhost/127.0.0.1:10006 to /127.0.0.1:59982 {}
+[INFO ] 2018-10-12T12:51:45,849Z [nioEventLoopGroup-2-3] peers.DL6bogPH6pSjW7XqT9Lxn2qkbLUZytbvVjAbKuKmH5keVe -> localhost:10006:O=PartyB, L=New York, C=US.onSocketConnected - Bridge Disconnected {}
+[INFO ] 2018-10-12T12:51:45,875Z [nioEventLoopGroup-2-3] O=Notary, L=London, C=GB.onConnectionLocalClose - Connection local close org.apache.qpid.proton.engine.impl.ConnectionImpl@84a2b33 {}
+[INFO ] 2018-10-12T12:51:45,881Z [nioEventLoopGroup-2-3] O=Notary, L=London, C=GB.onTransportError - Transport Error TransportImpl [_connectionEndpoint=org.apache.qpid.proton.engine.impl.ConnectionImpl@84a2b33, org.apache.qpid.proton.engine.impl.TransportImpl@7e6efe0c] {}
+[INFO ] 2018-10-12T12:51:45,884Z [nioEventLoopGroup-2-3] O=Notary, L=London, C=GB.onTransportError - Error: connection aborted {}
+[INFO ] 2018-10-12T12:51:46,845Z [nioEventLoopGroup-2-4] netty.AMQPClient.run - Retry connect {}
+[INFO ] 2018-10-12T12:51:46,860Z [nioEventLoopGroup-2-5] netty.AMQPClient.operationComplete - Connected to localhost:10006 {}
+[INFO ] 2018-10-12T12:51:46,864Z [nioEventLoopGroup-2-5] O=PartyB, L=New York, C=US.channelActive - New client connection 22d57e1f from localhost/127.0.0.1:10006 to /127.0.0.1:60013 {}
+[INFO ] 2018-10-12T12:51:46,925Z [nioEventLoopGroup-2-5] O=PartyB, L=New York, C=US.userEventTriggered - handshake completed subject: O=PartyB, L=New York, C=US {}
+[INFO ] 2018-10-12T12:51:46,948Z [nioEventLoopGroup-2-5] peers.DL6bogPH6pSjW7XqT9Lxn2qkbLUZytbvVjAbKuKmH5keVe -> localhost:10006:O=PartyB, L=New York, C=US.onSocketConnected - Bridge Connected {}
+[INFO ] 2018-10-12T12:51:46,967Z [nioEventLoopGroup-2-5] O=Notary, L=London, C=GB.onConnectionLocalOpen - Connection local open org.apache.qpid.proton.engine.impl.ConnectionImpl@4c703f67 {}
+[WARN ] 2018-10-12T12:51:55,456Z [HikariPool-1 housekeeper] pool.HikariPool.run - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h18s1ms). {}
+[WARN ] 2018-10-12T14:17:14,813Z [Thread-2 (ActiveMQ-server-org.apache.activemq.artemis.core.server.impl.ActiveMQServerImpl$3@779cb140)] core.client.fail - AMQ212037: Connection failure has been detected: AMQ119014: Did not receive data from /127.0.0.1:60010 within the 60,000ms connection TTL. The connection will now be closed. [code=CONNECTION_TIMEDOUT] {}
+[WARN ] 2018-10-12T14:17:14,815Z [HikariPool-1 housekeeper] pool.HikariPool.run - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h24m49s263ms). {}
+[INFO ] 2018-10-12T14:17:14,854Z [nioEventLoopGroup-2-5] netty.AMQPClient.operationComplete - Disconnected from localhost:10006 {}
+[INFO ] 2018-10-12T14:17:14,858Z [nioEventLoopGroup-2-5] O=PartyB, L=New York, C=US.channelInactive - Closed client connection 22d57e1f from localhost/127.0.0.1:10006 to /127.0.0.1:60013 {}
+[INFO ] 2018-10-12T14:17:14,860Z [nioEventLoopGroup-2-5] peers.DL6bogPH6pSjW7XqT9Lxn2qkbLUZytbvVjAbKuKmH5keVe -> localhost:10006:O=PartyB, L=New York, C=US.onSocketConnected - Bridge Disconnected {}
+[INFO ] 2018-10-12T14:17:14,879Z [nioEventLoopGroup-2-5] O=Notary, L=London, C=GB.onConnectionLocalClose - Connection local close org.apache.qpid.proton.engine.impl.ConnectionImpl@4c703f67 {}
+[INFO ] 2018-10-12T14:17:14,882Z [nioEventLoopGroup-2-5] O=Notary, L=London, C=GB.onTransportError - Transport Error TransportImpl [_connectionEndpoint=org.apache.qpid.proton.engine.impl.ConnectionImpl@4c703f67, org.apache.qpid.proton.engine.impl.TransportImpl@3904b6a3] {}
+[INFO ] 2018-10-12T14:17:14,882Z [nioEventLoopGroup-2-5] O=Notary, L=London, C=GB.onTransportError - Error: connection aborted {}
+[INFO ] 2018-10-12T14:17:15,861Z [nioEventLoopGroup-2-6] netty.AMQPClient.run - Retry connect {}
+[INFO ] 2018-10-12T14:17:15,878Z [nioEventLoopGroup-2-7] netty.AMQPClient.operationComplete - Connected to localhost:10006 {}
+[INFO ] 2018-10-12T14:17:15,889Z [nioEventLoopGroup-2-7] O=PartyB, L=New York, C=US.channelActive - New client connection 557a1139 from localhost/127.0.0.1:10006 to /127.0.0.1:60052 {}
+[INFO ] 2018-10-12T14:17:15,975Z [nioEventLoopGroup-2-7] O=PartyB, L=New York, C=US.userEventTriggered - handshake completed subject: O=PartyB, L=New York, C=US {}
+[INFO ] 2018-10-12T14:17:15,978Z [nioEventLoopGroup-2-7] peers.DL6bogPH6pSjW7XqT9Lxn2qkbLUZytbvVjAbKuKmH5keVe -> localhost:10006:O=PartyB, L=New York, C=US.onSocketConnected - Bridge Connected {}
+[INFO ] 2018-10-12T14:17:15,999Z [nioEventLoopGroup-2-7] O=Notary, L=London, C=GB.onConnectionLocalOpen - Connection local open org.apache.qpid.proton.engine.impl.ConnectionImpl@41fcae4b {}
+[INFO ] 2018-10-12T15:01:12,882Z [Command line shell terminator] shell.InteractiveShell.invoke - Command shell has exited {}
+[INFO ] 2018-10-12T15:01:12,898Z [Command line shell terminator] BasicInfo.printBasicNodeInfo - Shutting down ... {}
+[INFO ] 2018-10-12T15:01:12,931Z [main] internal.Node.run - Node exiting successfully {}

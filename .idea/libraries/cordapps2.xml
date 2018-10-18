@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="cordapps2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/build/nodes/Notary/cordapps/cordapp-bootcamp.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/nodes/Notary/cordapps/corda-fx.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
