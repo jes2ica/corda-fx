@@ -14,8 +14,8 @@ import rx.Observable;
 
 import java.util.concurrent.ExecutionException;
 
-public class RPCClient {
-    private static final Logger logger = LoggerFactory.getLogger(RPCClient.class);
+public class RpcClient {
+    private static final Logger logger = LoggerFactory.getLogger(RpcClient.class);
 
     private static void logState(StateAndRef<TradeState> state) {
         logger.info("{}", state.getState().getData());
@@ -38,8 +38,8 @@ public class RPCClient {
         final Observable<Vault.Update<TradeState>> updates = dataFeed.getUpdates();
 
         // Log the 'placed' IOUs and listen for new ones.
-        snapshot.getStates().forEach(RPCClient::logState);
-        updates.toBlocking().subscribe(update -> update.getProduced().forEach(RPCClient::logState));
+        snapshot.getStates().forEach(RpcClient::logState);
+        updates.toBlocking().subscribe(update -> update.getProduced().forEach(RpcClient::logState));
     }
 
 }
