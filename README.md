@@ -120,6 +120,7 @@ Once you've finished the CorDapp's code, run it with the following steps:
 
     * Windows:   `gradlew.bat deployNodesJava -Poffline=true`
     * macOS:     `./gradlew deployNodesJava -Poffline=true`
+      * For stacktrace: `./gradlew deployNodesJava -Poffline=true --stacktrace`
 
 * Start the nodes by running the following command:
 
